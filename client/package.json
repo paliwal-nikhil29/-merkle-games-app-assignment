@@ -1,0 +1,24 @@
+{
+  "name": "merkle-games-app-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx nuxt dev",
+    "build": "npx nuxt build",
+    "start": "npx nuxt preview",
+    "typecheck": "npx -y tsc --noEmit",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "nuxt": "^3.17.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "@vue/test-utils": "^2.3.0",
+    "axe-core": "^4.6.3",
+    "jsdom": "^22.1.0",
+    "sass-embedded": "^1.100.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.3.8"
+  }
+}

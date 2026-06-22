@@ -1,0 +1,115 @@
+@use './_variables.scss' as *;
+
+:root {
+  --i-bg: #ffffff;
+  --i-fg: #1a1a1a;
+  --i-muted: #6b7280;
+  --i-fg-two: #cbcbcb;
+  --i-accent: #6366f1;
+  --i-star: #f59e0b;
+  --i-success: #16a34a;
+  --i-danger: #dc2626;
+  --i-warning: #d97706;
+  --i-info: #2563eb;
+
+  --border-radius: 8px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+html.dark {
+  --i-bg: #0f1117;
+  --i-fg: #f0f0f0;
+  --i-muted: #8b95a3;
+  --i-fg-two: #6b7280;
+  --i-accent: #818cf8;
+  --i-star: #f59e0b;
+  --i-success: #4ade80;
+  --i-danger: #f87171;
+  --i-warning: #fbbf24;
+  --i-info: #60a5fa;
+}
+
+.i-bg { 
+  background-color: var(--i-bg);
+}
+.i-fg { color: var(--i-fg); }
+.i-muted { color: var(--i-muted); }
+.i-accent { color: var(--i-accent); }
+.i-star { color: var(--i-star); }
+.i-border { border-color: var(--i-muted); }
+.i-success  { color: var(--i-success); }
+.i-danger   { color: var(--i-danger); }
+.i-warning  { color: var(--i-warning); }
+.i-info     { color: var(--i-info); }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: $text-color;
+  background: $bg-color;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  
+  @media (min-width: 992px) {
+    max-width: 960px;
+    padding: 2rem;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1680px) {
+    max-width: 1320px;
+  }
+}
+
+a, .nuxt-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.g-tag {
+  background-color: var(--i-muted);
+  color: var(--i-bg);
+  font-size: 0.65rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.g-form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--i-muted);
+  border-radius: 0.25rem;
+  background-color: var(--i-bg);
+  color: var(--i-fg);
+}
+
+.card {
+  background-color: var(--i-bg);
+  border: 1px solid var(--i-fg-two);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--i-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
