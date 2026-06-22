@@ -1,1 +1,0 @@
-# -merkle-games-app-assignment
