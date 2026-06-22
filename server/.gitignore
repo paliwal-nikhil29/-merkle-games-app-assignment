@@ -22,9 +22,3 @@ build/
 
 # SQLite database
 data/*.sqlite
-
-# Ignore Nuxt build and Claude files (including nested folders)
-.nuxt/
-.claude
-**/.nuxt/
-**/.claude
